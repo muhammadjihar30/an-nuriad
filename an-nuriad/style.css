@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(Desktop\ -\ 2.png);
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    background-color: #4ed9d3;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.illustration img {
+    width: 150px;
+}
+
+.right {
+    width: 50%;
+    background-color: white;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+h2 {
+    color: #cccccc;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Pastikan form memenuhi lebar penuh */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%; /* Pastikan input memenuhi lebar penuh form */
+    box-sizing: border-box; /* Pastikan padding tidak mengubah lebar */
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4ed9d3;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Agar tombol memenuhi lebar form */
+}
+
+button:hover {
+    background-color: #3cc2b3;
+}

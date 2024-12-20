@@ -1,0 +1,141 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  background-color: #f9f9f9; 
+  line-height: 1.6;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+th, td {
+  border: 1px solid #ddd; 
+  padding: 10px;
+  text-align: center; 
+}
+
+th {
+  background-color: #f4f4f4; /* Light grey background for table headers */
+  font-weight: bold;
+}
+
+td {
+  vertical-align: middle;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+  background-color: #f2f2f2; /* Light grey background on row hover */
+}
+
+/* Action menu container */
+.action-menu {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the ⋮ button */
+.action-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+  background-color: #eaeaea; /* Light hover effect for button */
+}
+
+/* Dropdown container hidden by default */
+.action-dropdown {
+  position: absolute;
+  top: 100%; /* Positioned below the button */
+  right: 0; /* Align dropdown to the right */
+  display: none; /* Hidden by default */
+  background-color: #ffffff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for dropdown */
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 100;
+  min-width: 150px;
+}
+
+/* Dropdown menu buttons */
+.action-dropdown button {
+  display: block;
+  width: 100%; /* Full width for dropdown buttons */
+  padding: 10px 15px;
+  background-color: transparent;
+  border: none;
+  text-align: left; /* Align text to the left */
+  font-size: 14px;
+  color: #333; /* Default color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for dropdown buttons */
+.action-dropdown button:hover {
+  background-color: #f5f5f5; /* Light hover effect */
+  color: #007bff; /* Blue text on hover */
+}
+
+/* Specific styles for Edit button */
+.edit-option {
+  color: #28a745; /* Green for Edit */
+}
+
+.edit-option:hover {
+  background-color: #e8f5e9; /* Light green background on hover */
+}
+
+/* Specific styles for Delete button */
+.delete-option {
+  color: #dc3545; /* Red for Delete */
+}
+
+.delete-option:hover {
+  background-color: #f8d7da; /* Light red background on hover */
+}
+
+/* Show the dropdown on hover */
+.action-menu:hover .action-dropdown {
+  display: block; /* Show dropdown when parent is hovered */
+}
+
+/* Responsive table styles */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px; /* Smaller font size for smaller screens */
+  }
+
+  th, td {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+
+  .action-dropdown {
+    min-width: 120px; /* Adjust dropdown width for smaller screens */
+  }
+}

@@ -1,0 +1,172 @@
+:root {
+  --blue: #000000;
+  --white: #fff;
+  --grey: #f5f5f5;
+  --black1: #222;
+  --black2: #999;
+  --black3: #2e2b24;
+  --gradient: linear-gradient(
+    -90deg,
+    rgba(73, 233, 230, 1) 0%,
+    rgba(2, 153, 150, 1) 100%
+  );
+  --bluewek: #49e9e6;
+  --inverse-gradient: linear-gradient(
+    -180deg,
+    rgba(2, 153, 150, 1) 100%
+  );
+  --zero-gradient: linear-gradient(
+    0deg,
+    rgba(73, 233, 230, 1) 0%,
+    rgba(2, 153, 150, 1) 100%
+  );
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(73, 233, 230, 1) 100%,
+    rgba(2, 153, 150, 1) 50%
+  );
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.main {
+  padding: 20px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.topbar h1 {
+  font-size: 24px;
+  color: #444;
+}
+
+.topbar button {
+  padding: 10px 20px;
+  background: #4caf50; /* Warna hijau yang cerah */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.topbar button:hover {
+  background: #45a049; /* Warna hijau lebih gelap saat hover */
+}
+
+.detail-section {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%; /* Mengubah lebar tabel menjadi 100% untuk responsif */
+  border-collapse: collapse;
+  margin: 10px 0; /* Menghapus margin kanan yang berlebihan */
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background:rgba(2, 153, 150, 1);
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table td {
+  background: #f9f9f9; /* Warna latar belakang tabel sel */
+  color: #555;
+}
+
+table tr:hover td {
+  background: #e3f2fd; /* Warna latar belakang saat hover pada baris tabel */
+  transition: background 0.3s ease;
+}
+
+/* Gaya untuk input teks, select, dan input number */
+input[type="text"],
+input[type="number"],
+select {
+  width: 95%; /* Membuat input mengambil lebar penuh */
+  padding: 12px; /* Menambahkan padding untuk kenyamanan */
+  border: 1px solid #ddd; /* Border abu-abu */
+  border-radius: 5px; /* Sudut melengkung */
+  font-size: 14px; /* Ukuran font */
+  color: #333; /* Warna teks */
+  background-color: #f9f9f9; /* Warna latar belakang input */
+  transition: border 0.3s ease, background 0.3s ease; /* Transisi halus untuk border dan background */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border: 1px solid #4caf50; /* Border hijau saat fokus */
+  background-color: #fff; /* Mengubah latar belakang menjadi putih saat fokus */
+  outline: none; /* Menghilangkan outline default */
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+  color: #999; /* Warna placeholder */
+}
+
+input[type="text"]:hover,
+input[type="number"]:hover,
+select:hover {
+  border: 1px solid #4caf50; /* Border hijau saat hover */
+  background-color: #f1f1f1; /* Mengubah latar belakang saat hover */
+}
+
+@media (max-width: 768px) {
+  .topbar h1 {
+    font-size: 20px; /* Ukuran font yang lebih kecil untuk layar kecil */
+  }
+
+  .topbar button {
+    padding: 8px 16px; /* Padding yang lebih kecil untuk tombol */
+  }
+
+  table th,
+  table td {
+    font-size: 12px; /* Ukuran font yang lebih kecil dalam tabel */
+  }
+}
+button {
+  padding: 10px 20px;
+  background: #4caf50; /* Warna hijau yang cerah */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #45a049; /* Warna hijau lebih gelap saat hover */
+}
